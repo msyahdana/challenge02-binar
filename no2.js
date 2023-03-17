@@ -13,12 +13,12 @@ const checkTypeNumber = (givenNumber) => {
   return givenNumber % 2 == 0 ? "GENAP" : "GANJIL";
 };
 
-//Export function checkTypeNumber
-module.exports = checkTypeNumber;
-
 console.log(checkTypeNumber(10)); //Output => "GENAP"
 console.log(checkTypeNumber(3)); //Output => "GANJIL"
 console.log(checkTypeNumber("3")); //Output => "Error: Invalid data type!"
 console.log(checkTypeNumber({})); //Output => "Error: Invalid data type!"
 console.log(checkTypeNumber([])); //Output => "Error: Invalid data type!"
 console.log(checkTypeNumber()); //Output =>"Error: Bro where is the parameter?"
+
+//Export checkTypeNumber
+exports.checkTypeNumber = checkTypeNumber;

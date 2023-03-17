@@ -1,5 +1,5 @@
 //Import checkTypeNumber yang berada di file no2
-const checkTypeNumber = require("./no2");
+const { checkTypeNumber } = require("./no2");
 
 function checkEmail(email) {
   // validasi terhadap tipe data parameter
